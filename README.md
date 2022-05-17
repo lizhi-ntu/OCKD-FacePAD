@@ -25,6 +25,8 @@ This repo provides PyTorch implementation of the paper
 
 4. Please use [preprocessing.py](https://github.com/lizhi-ntu/OCKD-FacePAD/blob/main/preprocessing.py) to get face images from videos. 
 
+5. Please find the data division of the challenging experimental setting [here](https://github.com/lizhi-ntu/OCKD-FacePAD/blob/main/challenging_setting_data_division.txt).
+
 # 🍀 Teacher Network Training
 
 👀 Please use the example script [train_teacher.py](https://github.com/lizhi-ntu/OCKD-FacePAD/blob/main/train_teacher.py) to train the Teacher Network.
@@ -32,6 +34,10 @@ This repo provides PyTorch implementation of the paper
 # 🍀 Student Network Training 
 
 👀 Please use the example script [train_student.py](https://github.com/lizhi-ntu/OCKD-FacePAD/blob/main/train_student.py) to train the Student Network.
+
+# 🍀 Model Evaluation
+
+👀 You use the example script [evaluation_student.py](https://github.com/lizhi-ntu/OCKD-FacePAD/blob/main/evaluation_student.py) to evalute the pretrained model.
 
 # 🍀 Others
 
