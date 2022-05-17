@@ -35,4 +35,10 @@ This repo provides PyTorch implementation of the paper
 
 # 🍀 Others
 
+👀 Everything in this repo can NOT be used for commercial perpose. 
+
 👀 The implementation of sparse learning in our codes is based on [library](https://github.com/TimDettmers/sparse_learning).
+
+👀 If you use this repo in your work, please use the following citation.
+
+@article{li2022one, title={One-Class Knowledge Distillation for Face Presentation Attack Detection}, author={Li, Zhi and Cai, Rizhao and Li, Haoliang and Lam, Kwok-Yan and Hu, Yongjian and Kot, Alex C}, journal={arXiv preprint arXiv:2205.03792}, year={2022}}
