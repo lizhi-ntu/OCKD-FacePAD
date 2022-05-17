@@ -1,0 +1,13 @@
+NTU ROSE-YOUTU (N), CASIA-FASD (C), IDIAP REPLAY-ATTACK (I), and MSU-MFSD (M) are used for cross-dataset evaluation (CIMN-OCDA).
+
+For experiments using dataset I as the target dataset (C-I, M-I, N-I):
+The dev-set of dataset I is used as the validation-set.
+
+For experiments using dataset C as the target dataset (I-C, M-C, N-C):
+clients (13, 14, 15, 16) from the train-set of the dataset C are used as the validation-set.
+
+For experiments using dataset M as the target dataset (C-M, I-M, N-M):
+clients (36, 37, 39, 42) from the train-set of the dataset M are used as the validation-set.
+
+For experiments using dataset N as the target dataset (C-N, I-N, M-N):
+clients (2, 3) from the train-set of the dataset N are used as the validation-set.
