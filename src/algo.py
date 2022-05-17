@@ -364,6 +364,42 @@ def train_student(opt):
 
 
 #===================================================================================================================
+def evaluation_student(opt):
+    teacher = TeacherNet(ic=3).to(torch.device('cuda'))
+    teacher.load_state_dict(torch.load(opt.teacher_path))
+    teacher.eval()
+    
+    student = StudentNet(ic=3).to(torch.device('cuda'))
+    student.load_state_dict(sparse_to_dense(torch.load(opt.student_path)))
+    student.eval()
+
+    if opt.target_set == 'client':
+        test_dataset = ClientSet(sub='test', client=opt.mask, sps=opt.sps)
+        test_loader = ImageLoader(test_dataset, batch_size=opt.bs, shuffle=False, num_workers=opt.nw)
+    
+    else:
+        if opt.setting == 'ideal':
+            test_dataset = GeneralSet(name=opt.target_set, sub='test', mode=opt.ptc, sps=opt.sps)
+            test_loader = ImageLoader(test_dataset, batch_size=opt.bs, shuffle=False, num_workers=opt.nw)
+
+        if opt.setting == 'challenging':
+            val_dataset = GeneralSet(name=opt.target_set, sub='val_x', mode='adaptation', sps=opt.sps)
+            test_dataset = GeneralSet(name=opt.target_set, sub='test', mode=opt.ptc, sps=opt.sps)
+            
+            val_loader = ImageLoader(val_dataset, batch_size=opt.bs, shuffle=False, num_workers=opt.nw)
+            test_loader = ImageLoader(test_dataset, batch_size=opt.bs, shuffle=False, num_workers=opt.nw)
+
+    if opt.setting == 'ideal':
+        test_auc, test_pf = test_student_ideal(opt, teacher=teacher, student=student, dataloader=test_loader)
+    else:
+        test_auc, test_pf= test_student_challenging(
+                        opt=opt, teacher=teacher, student=student, val_dataloader=val_loader, test_dataloader=test_loader)
+    
+    print_logs(opt=opt, model_id=0, total_loss=0, test_auc=test_auc, test_pf=test_pf)
+    write_logs(opt=opt, model_id=0, total_loss=0, test_auc=test_auc, test_pf=test_pf)
+
+
+#===================================================================================================================
 
 def dense_to_sparse(stats):
     keys = [
