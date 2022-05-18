@@ -41,7 +41,7 @@ This repo provides PyTorch implementation of the paper
 
 # 🍀 Others
 
-👀 Everything in this repo can NOT be used for commercial perpose. 
+👀 Everything in this repo can NOT be used for commercial purpose. 
 
 👀 If you have any questions, feel free to open an issue or contact me via [email](https://github.com/lizhi-ntu/lizhi-ntu/blob/main/README.md).
 
