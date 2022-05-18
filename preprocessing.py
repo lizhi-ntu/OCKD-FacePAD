@@ -97,13 +97,9 @@ detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor('shape_predictor_5_face_landmarks.dat')
 aligner = FaceAligner()
 
-
-# Please Customize the Following Codes 
+# Please customize the script below >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 video_folder = 'a directory you store videos'
 face_folder = 'a directory you store face images'
-
-
-
 videos = os.listdir(video_folder)
 for video in videos:
     video_name, _ = os.path.splitext(video)
@@ -113,3 +109,4 @@ for video in videos:
         in_dir = '{}/{}'.format(video_folder, video)
         out_dir = '{}/{}'.format(face_folder, video_name)
         video2face(in_dir=in_dir, out_dir=out_dir, detector=detector, predictor=predictor, aligner=aligner)
+# Please customize the script above <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
