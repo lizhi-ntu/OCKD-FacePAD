@@ -43,6 +43,8 @@ This repo provides PyTorch implementation of the paper
 
 👀 Everything in this repo can NOT be used for commercial perpose. 
 
+👀 If you have any questions, feel free to open an issue or contact me via [email](https://github.com/lizhi-ntu/lizhi-ntu/blob/main/README.md).
+
 👀 The implementation of sparse learning in our codes is based on [library](https://github.com/TimDettmers/sparse_learning).
 
 👀 If you use this repo in your work, please use the following citation.
