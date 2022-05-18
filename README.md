@@ -37,7 +37,7 @@ This repo provides PyTorch implementation of the paper
 
 # 🍀 Model Evaluation
 
-👀 You use the example script [evaluation_student.py](https://github.com/lizhi-ntu/OCKD-FacePAD/blob/main/evaluation_student.py) to evalute the pretrained model.
+👀 You may use the example script [evaluation_student.py](https://github.com/lizhi-ntu/OCKD-FacePAD/blob/main/evaluation_student.py) to evalute the pretrained model.
 
 # 🍀 Others
 
