@@ -1,7 +1,7 @@
 # 🌼OCKD-FacePAD
 
 This repo provides PyTorch implementation of the paper 
-[One-Class Knowledge Distillation for Face Presentation Attack Detection](https://arxiv.org/pdf/2205.03792.pdf) to be appear on IEEE Transactions on Information Forensics & Security (TIFS).
+[One-Class Knowledge Distillation for Face Presentation Attack Detection](https://arxiv.org/pdf/2205.03792.pdf) to appear on IEEE Transactions on Information Forensics & Security (TIFS).
 
 
 #  🍀 Data Preparation 
