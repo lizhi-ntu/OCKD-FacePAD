@@ -23,7 +23,7 @@ This repo provides PyTorch implementation of the paper
    
 3. Please download the pretrained shape predictor model from [here](https://github.com/davisking/dlib-models/blob/master/shape_predictor_5_face_landmarks.dat.bz2).
 
-4. Please use [preprocessing.py](https://github.com/lizhi-ntu/OCKD-FacePAD/blob/main/preprocessing.py) to get face images from videos. 
+4. Please use [preprocessing.py](https://github.com/lizhi-ntu/OCKD-FacePAD/blob/main/preprocessing.py) to get face images from videos. The prepocessed data for client-specific one-class domain adaptation setting are available [here](https://rose1.ntu.edu.sg/dataset/faceLivenessDetection/).
 
 5. Please find the data division of the challenging experimental setting [here](https://github.com/lizhi-ntu/OCKD-FacePAD/blob/main/challenging_setting_data_division.txt).
 
@@ -49,4 +49,13 @@ This repo provides PyTorch implementation of the paper
 
 👀 If you use this repo in your work, please use the following citation.
 
-@article{li2022one, title={One-Class Knowledge Distillation for Face Presentation Attack Detection}, author={Li, Zhi and Cai, Rizhao and Li, Haoliang and Lam, Kwok-Yan and Hu, Yongjian and Kot, Alex C}, journal={arXiv preprint arXiv:2205.03792}, year={2022}}
+@ARTICLE{9782427, 
+author={Li, Zhi and Cai, Rizhao and Li, Haoliang and Lam, Kwok-Yan and Hu, Yongjian and Kot, Alex C.},
+journal={IEEE Transactions on Information Forensics and Security}, 
+title={One-Class Knowledge Distillation for Face Presentation Attack Detection}, 
+year={2022}, 
+volume={}, 
+number={}, 
+pages={1-1}, 
+doi={10.1109/TIFS.2022.3178240}
+}
